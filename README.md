@@ -40,4 +40,64 @@ Follow these steps to set up and run the project locally.
    dotnet run --project ToDoApp
 6. Open your browser and navigate to:
    ```bash
+   http://localhost:5081
+
+### Frontend Setup (if applicable) 
+If your project includes a frontend (e.g., React), follow these additional steps:
+1. Navigate to the frontend folder:
+   ```bash
+   cd todoapp-frontend 
+2. Install dependencies:
+   ```bash
+   npm install
+3. Run the frontend:
+   ```bash
+   npm start
+4. Open your browser and navigate to:
+   ```bash
    http://localhost:3000
+
+### Running Tests
+To run the tests, follow these steps:
+1. Navigate to the test project folder:
+   ```bash
+   cd ToDoApp.Tests 
+2. Run the tests:
+   ```bash
+   dotnet test
+3. Run the frontend:
+   ```bash
+   npm start
+4. Open your browser and navigate to:
+   ```bash
+   http://localhost:3000
+
+### Folder Structure 
+   ```bash
+ToDoAppWithTests/
+├── ToDoApp/               # Main app project
+│   ├── Connected\ Services/
+│   ├── Dependencies/
+│   ├── Properties/
+│   ├── API/
+│   │   └── Controllers/
+│   ├── Core/
+│   │   ├── Entities/
+│   │   └── Interfaces/
+│   ├── Infrastructure/
+│   │   ├── Data/
+│   │   └── Repositories/
+│   ├── Migrations/
+│   ├── todoapp-frontend/
+│   ├── appsettings.json
+│   ├── package.json
+│   ├── Program.cs
+│   ├── todo.db
+│   └── ToDoApp.http
+├── ToDoApp.Tests/         # Test project
+│   ├── Dependencies/
+│   └── ToDoRepositoryTests.cs
+├── .gitignore             # Git ignore file
+├── README.md              # Project documentation
+├── LICENSE                # License file
+└── ToDoAppWithTests.sln   # Solution file
