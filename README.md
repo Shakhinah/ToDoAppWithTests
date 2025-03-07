@@ -65,12 +65,6 @@ To run the tests, follow these steps:
 2. Run the tests:
    ```bash
    dotnet test
-3. Run the frontend:
-   ```bash
-   npm start
-4. Open your browser and navigate to:
-   ```bash
-   http://localhost:3000
 
 ### Folder Structure 
    ```bash
