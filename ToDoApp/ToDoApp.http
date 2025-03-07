@@ -1,0 +1,38 @@
+@ToDoApp_HostAddress = http://localhost:5081
+
+### Get all ToDo items
+GET {{ToDoApp_HostAddress}}/api/ToDo
+Accept: application/json
+
+### Get a specific ToDo item by ID
+@todoId = 1
+GET {{ToDoApp_HostAddress}}/api/ToDo/{{todoId}}
+Accept: application/json
+
+### Create a new ToDo item
+@newContent = Buy groceries
+@newIsCompleted = false
+POST {{ToDoApp_HostAddress}}/api/ToDo
+Content-Type: application/json
+
+{
+  "content": "{{newContent}}",
+  "isCompleted": {{newIsCompleted}}
+}
+
+### Update a ToDo item by ID
+@updateId = 1
+@updateContent = Buy groceries and milk
+@updateIsCompleted = true
+PUT {{ToDoApp_HostAddress}}/api/ToDo/{{updateId}}
+Content-Type: application/json
+
+{
+  "id": {{updateId}},
+  "content": "{{updateContent}}",
+  "isCompleted": {{updateIsCompleted}}
+}
+
+### Delete a ToDo item by ID
+@deleteId = 1
+DELETE {{ToDoApp_HostAddress}}/api/ToDo/{{deleteId}}
