@@ -27,16 +27,17 @@ Follow these steps to set up and run the project locally.
    ```bash
    git clone https://github.com/Shakhinah/ToDoAppWithTests.git 
 2. Navigate to the project folder:
-```bash
+   ```bash
   cd ToDoAppWithTests
-3.Restore dependencies:
-```bash
+3. Restore dependencies:
+   ```bash
   dotnet restore
-4.Apply database migrations:
-```bash
+4. Apply database migrations:
+   ```bash
   dotnet ef database update --project ToDoApp
-5.Run the backend:
-```bash
+5. Run the backend:
+   ```bash
   dotnet run --project ToDoApp
-6.Open your browser and navigate to:
-http://localhost:5000
+6. Open your browser and navigate to:
+   ```bash
+   http://localhost:5000
